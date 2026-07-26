@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Development of the Atomic Model</title>
+<meta name="description" content="An interactive story for high school chemistry students on how the atomic model developed." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Skip link for keyboard / screen-reader users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="app">
+
+    <!-- ============ HEADER: title + progress ============ -->
+    <header class="app-header">
+      <div class="header-row">
+        <h1 class="app-title">Atomic Model: A Chemistry Student's Journey</h1>
+      </div>
+      <div class="progress-wrap" role="group" aria-label="Story progress">
+        <div class="progress-labels">
+          <span id="progress-chapter-label">Welcome</span>
+          <span id="progress-percent-label">0%</span>
+        </div>
+        <div class="progress-track" aria-hidden="true">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+        <ol id="chapter-dots" class="chapter-dots" aria-label="Chapters"></ol>
+      </div>
+    </header>
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <main id="main-content" class="app-main">
+      <div id="screen" class="screen" tabindex="-1" aria-live="polite">
+        <!-- screen content is rendered here by script.js -->
+      </div>
+    </main>
+
+    <!-- ============ FOOTER: navigation ============ -->
+    <footer class="app-footer">
+      <button id="btn-back" class="nav-btn nav-btn--secondary" type="button">&larr; Back</button>
+      <span id="step-indicator" class="step-indicator"></span>
+      <button id="btn-next" class="nav-btn nav-btn--primary" type="button">Next &rarr;</button>
+    </footer>
+
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
